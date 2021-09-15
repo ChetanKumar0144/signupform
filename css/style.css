@@ -1,0 +1,199 @@
+    @import 'utilities.css';
+     :root {
+        --pure: #ffffff;
+        --primary: #3dcfd3;
+        --danger: #f54d41;
+        --dark: #383433;
+        --regpage: #273246;
+        --grey: #808080;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    header {
+        background-color: var(--dark);
+    }
+    
+    .navbar {
+        color: var(--pure);
+        display: flex;
+        align-items: center;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 30px;
+        height: inherit;
+    }
+    
+    nav.navbar img {
+        height: 50px;
+        padding: .3rem;
+        width: 150px;
+    }
+    
+    section.reg_page {
+        background-color: var(--regpage);
+        height: 90.5vh;
+        display: flex;
+    }
+    
+    section.reg_page .login_page {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    section.reg_page .login_page .has_text {
+        color: var(--pure);
+        margin-bottom: 0;
+    }
+    
+    section.reg_page .login_page p {
+        color: var(--grey);
+        margin-top: -0.7rem;
+    }
+    
+    .b-tabs .tab {
+        margin-bottom: 0;
+        flex-shrink: 0;
+        -webkit-overflow-scrolling: touch;
+        align-items: stretch;
+        display: flex;
+        font-size: 1rem;
+        justify-content: space-between;
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .tab ul {
+        border-bottom: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        /* justify-content: flex-start; */
+    }
+    
+    .tab a {
+        position: relative;
+        color: #b8b8b8;
+        font-size: 1.5rem;
+        transition: color .3s;
+        cursor: pointer;
+        text-decoration: none;
+        padding: .5em 1em;
+    }
+    
+    .b-tabs .tab a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: calc(100% - 40px);
+        height: 4px;
+        background-color: #ff8a00;
+        border-radius: 10px;
+        transform: translateX(-50%) scaleX(0);
+        transition: transform .5s;
+    }
+    
+    .b-tabs .tab a.active::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+    
+    .content {
+        width: 100vh;
+        border-radius: 2rem;
+        background-color: #36445c;
+    }
+    
+    .login-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+    }
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .data {
+        display: flex;
+        align-items: stretch;
+    }
+    
+    section.reg_page .login_page .data p {
+        margin: auto;
+        text-align: left;
+    }
+    
+    .right {
+        border-left: 1px solid #4f5e77;
+    }
+    
+    section.reg_page .login_page .right p {
+        color: var(--pure);
+        font-size: 1.25rem;
+        text-decoration: underline;
+        margin-top: 0;
+    }
+    
+    section.reg_page .login_page .right .email {
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        text-align: left !important;
+    }
+    
+    .email label {
+        color: var(--grey);
+        font-size: 1rem;
+    }
+    
+    .email input {
+        padding: .5rem;
+        margin-top: .2rem;
+        font-family: "HindSiliguri", sans-serif!important;
+        color: var(--pure);
+        font-weight: 200;
+        max-width: 100%;
+        width: 100%;
+        border-radius: .2rem;
+        border: none;
+        background: #4f5e77;
+        font-size: 1rem;
+    }
+    
+    .email .btn {
+        max-width: 100%;
+        width: 100%;
+        border-radius: .2rem;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    
+    section.reg_page .login_page .right .or p {
+        text-decoration: none;
+    }
+    
+    .google img {
+        height: .7rem;
+    }
+    
+    .google .btn {
+        max-width: 100%;
+        width: 70%;
+        border-radius: .2rem;
+        margin-top: -1rem;
+        margin-left: 0;
+    }
+    
+    .baby a {
+        color: coral;
+        text-decoration: none;
+    }

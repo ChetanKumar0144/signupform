@@ -1,0 +1,35 @@
+.btn {
+    border-radius: .3rem;
+    padding: .5rem;
+    margin: .3rem;
+    cursor: pointer;
+    width: auto;
+    height: 2rem;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--pure);
+}
+
+.btn-primary:hover {
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--pure);
+}
+
+.btn-danger:hover {
+    background: none;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+
+ul {
+    list-style: none;
+}
